@@ -1,2 +1,1 @@
-# Project-6
-SVG Site Update
+# Project #6 - SVG Site Update
