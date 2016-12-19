@@ -1,0 +1,89 @@
+/* --------------------------
+  Keyframe Animations
+--------------------------- */
+
+// Scaling Animations
+// ------------------
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(.5);
+  }
+}
+
+// Translation Animations
+// ----------------------
+
+@keyframes slideUp {
+  50% {
+    transform: translate3d(0, -5px, 0);
+  }
+  75% {
+    transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideDown {
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+  75% {
+    transform: translate3d(0, -5px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes pant {
+  50% {
+    transform: translate3d(0, 2.25px, 0);
+  }
+}
+
+@keyframes eyebrowRaise {
+  25% {
+    transform: translate3d(0, -5px, 0);
+  }
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+  75% {
+    transform: translate3d(0, -5px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+// Line Animations
+// ---------------
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillIt {
+  100% {
+    fill-opacity: 1;
+    stroke-width: 0;
+  }
+}

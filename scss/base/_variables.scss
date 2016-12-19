@@ -1,0 +1,62 @@
+/* --------------------------
+  Variables
+--------------------------- */
+
+// Descriptive Color Variables
+// ---------------------------
+
+$muddyWaters : #BA8058;
+$tacao       : #EAAA7F;
+$bullShot    : #844B24;
+$twilightBlue: #FBFEFF;
+$outerSpace  : #2D3339;
+$manhattan   : #F4C6A6;
+$abbey       : #52595F;
+
+
+// Functional Color Variables
+// --------------------------
+
+$logoBG          : $muddyWaters;
+$logoText        : $tacao;
+$logoIcon        : $manhattan;
+
+$coatRed         : $muddyWaters;
+$coatFawn        : $tacao;
+$coatSable       : $bullShot;
+$coatBlackTan    : $abbey;
+
+$dogEyesNose     : $outerSpace;
+$dogNoseFur      : $twilightBlue;
+
+$eyebrowsRed     : $tacao;
+$eyebrowsFawn    : $manhattan;
+$eyebrowsSable   : $muddyWaters;
+$eyebrowsBlackTan: $muddyWaters;  
+
+
+// Stroke Length Variables - Logo
+// ------------------------------
+
+$pathList: (1, 50),
+           (2, 51),
+           (3, 91.65180206298828),
+           (4, 50),
+           (5, 61),
+           (6, 41.61882781982422),
+           (7, 82.62248992919922),
+           (8, 58.94584655761719),
+           (9, 77.48463439941406),
+           (10, 73.16106414794922),
+           (11, 83.29662322998047),
+           (12, 82.33621215820312),
+           (13, 73.44737243652344),
+           (14, 52.77312088012695),
+           (15, 63.207489013671875);
+
+
+// Media Query Variables
+// ---------------------
+
+$brk-mobile: "(max-width: 420px)";
+$brk-tablet: "(min-width: 420px)"; 

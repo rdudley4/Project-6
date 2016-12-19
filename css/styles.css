@@ -1,0 +1,408 @@
+/* --------------------------
+  Variables
+--------------------------- */
+/* --------------------------
+  Extended Styles
+--------------------------- */
+#red .st1, #fawn .st1, #sable .st1, #blacktan .st1 {
+  fill: #FBFEFF;
+}
+
+#red .st2, #fawn .st2, #sable .st2, #blacktan .st2 {
+  fill: #2D3339;
+}
+
+/* --------------------------
+  Base Styles
+--------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Amiko', serif;
+  font-weight: 400;
+  color: #111;
+  background: url("../svgs/background.svg") #edeff0;
+  background-size: 53px 50px;
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 0 0 7px #bbb;
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+  padding: 10px 0;
+}
+a:hover {
+  color: #111;
+}
+
+header {
+  padding-top: 10px;
+}
+header h1 {
+  line-height: 1em;
+}
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+header nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+main {
+  padding-top: 50px;
+}
+main h2 {
+  font-size: 28px;
+}
+main ul {
+  padding: 0;
+}
+main li {
+  display: inline-block;
+  color: #ba8058;
+  margin-right: 20px;
+}
+main li:last-child {
+  margin-right: 0;
+}
+main li img {
+  margin-bottom: 15px;
+}
+main li span {
+  margin-left: -40px;
+}
+main li svg {
+  width: 170px;
+  margin-bottom: 15px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+#logo {
+  max-width: 140px;
+}
+
+svg * {
+  transform-origin: 50% 50%;
+}
+
+/* --------------------------
+  Navigation Styles
+--------------------------- */
+#heart,
+#chat,
+#location {
+  width: 14px;
+  fill: #39add1;
+}
+
+a,
+a path {
+  transition: all .3s ease-out;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #39add1;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+a:hover path {
+  fill: #fff;
+}
+
+#home:hover .st0,
+#visit:hover .st0,
+#contact:hover .st0 {
+  animation: pulse 1s linear 0s infinite;
+}
+
+/* --------------------------
+  Logo Color Fills
+--------------------------- */
+.logoBG .st0 {
+  fill: #BA8058;
+}
+
+.text .st1 {
+  fill: #EAAA7F;
+}
+
+.icon .st2 {
+  fill: #F4C6A6;
+}
+
+/* --------------------------
+  Dog Color Fills
+--------------------------- */
+#red .st0 {
+  fill: #BA8058;
+}
+#red .st3 {
+  fill: #EAAA7F;
+}
+
+#fawn .st0 {
+  fill: #EAAA7F;
+}
+#fawn .st3 {
+  fill: #F4C6A6;
+}
+
+#sable .st0 {
+  fill: #844B24;
+}
+#sable .st3 {
+  fill: #BA8058;
+}
+
+#blacktan .st0 {
+  fill: #52595F;
+}
+#blacktan .st3,
+#blacktan .st4 {
+  fill: #BA8058;
+}
+
+/* --------------------------
+  Keyframe Animations
+--------------------------- */
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.8);
+  }
+}
+@keyframes pulse {
+  50% {
+    transform: scale(0.5);
+  }
+}
+@keyframes slideUp {
+  50% {
+    transform: translate3d(0, -5px, 0);
+  }
+  75% {
+    transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideDown {
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+  75% {
+    transform: translate3d(0, -5px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes pant {
+  50% {
+    transform: translate3d(0, 2.25px, 0);
+  }
+}
+@keyframes eyebrowRaise {
+  25% {
+    transform: translate3d(0, -5px, 0);
+  }
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+  75% {
+    transform: translate3d(0, -5px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fillIt {
+  100% {
+    fill-opacity: 1;
+    stroke-width: 0;
+  }
+}
+/* --------------------------
+  Logo Animation
+--------------------------- */
+.logoBG {
+  animation: grow .8s ease-out backwards;
+}
+
+.paw-TopLeft, .paw-TopMid, .paw-TopRight {
+  animation: slideDown .8s ease-out 1.5s forwards;
+}
+.paw-TopLeft, .paw-TopRight {
+  transform: translate3d(0, -38px, 0);
+}
+.paw-TopMid {
+  transform: translate3d(0, -32px, 0);
+  animation-delay: 1.6s;
+}
+.paw-TopRight {
+  animation-delay: 1.7s;
+}
+.paw-Bottom {
+  transform: translate3d(0, 55px, 0);
+  animation: slideUp .8s ease-out 1.5s forwards;
+}
+
+.text .st1 {
+  fill-opacity: 0;
+  stroke: #EAAA7F;
+  stroke-width: .8;
+  animation: offset 1s linear .8s forwards, fillIt .7s ease-out 1.8s forwards;
+}
+@media (max-width: 420px) {
+  .text .st1 {
+    visibility: hidden;
+  }
+}
+
+.text .st1:nth-of-type(1) {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+}
+
+.text .st1:nth-of-type(2) {
+  stroke-dasharray: 51;
+  stroke-dashoffset: 51;
+}
+
+.text .st1:nth-of-type(3) {
+  stroke-dasharray: 91.6518;
+  stroke-dashoffset: 91.6518;
+}
+
+.text .st1:nth-of-type(4) {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+}
+
+.text .st1:nth-of-type(5) {
+  stroke-dasharray: 61;
+  stroke-dashoffset: 61;
+}
+
+.text .st1:nth-of-type(6) {
+  stroke-dasharray: 41.61883;
+  stroke-dashoffset: 41.61883;
+}
+
+.text .st1:nth-of-type(7) {
+  stroke-dasharray: 82.62249;
+  stroke-dashoffset: 82.62249;
+}
+
+.text .st1:nth-of-type(8) {
+  stroke-dasharray: 58.94585;
+  stroke-dashoffset: 58.94585;
+}
+
+.text .st1:nth-of-type(9) {
+  stroke-dasharray: 77.48463;
+  stroke-dashoffset: 77.48463;
+}
+
+.text .st1:nth-of-type(10) {
+  stroke-dasharray: 73.16106;
+  stroke-dashoffset: 73.16106;
+}
+
+.text .st1:nth-of-type(11) {
+  stroke-dasharray: 83.29662;
+  stroke-dashoffset: 83.29662;
+}
+
+.text .st1:nth-of-type(12) {
+  stroke-dasharray: 82.33621;
+  stroke-dashoffset: 82.33621;
+}
+
+.text .st1:nth-of-type(13) {
+  stroke-dasharray: 73.44737;
+  stroke-dashoffset: 73.44737;
+}
+
+.text .st1:nth-of-type(14) {
+  stroke-dasharray: 52.77312;
+  stroke-dashoffset: 52.77312;
+}
+
+.text .st1:nth-of-type(15) {
+  stroke-dasharray: 63.20749;
+  stroke-dashoffset: 63.20749;
+}
+
+@media (min-width: 420px) {
+  .logo-text {
+    display: none;
+  }
+}
+
+/* --------------------------
+  Dog Animations
+--------------------------- */
+#red,
+#fawn,
+#sable,
+#blacktan {
+  transition: transform .3s ease-out 0s;
+}
+
+#red:hover,
+#fawn:hover,
+#sable:hover,
+#blacktan:hover {
+  transform: scale(1.2);
+}
+#red:hover .st3,
+#fawn:hover .st3,
+#sable:hover .st3,
+#blacktan:hover .st3 {
+  animation: eyebrowRaise .7s ease-out .2s forwards;
+}
+#red:hover .tongue path,
+#fawn:hover .tongue path,
+#sable:hover .tongue path,
+#blacktan:hover .tongue path {
+  animation: pant .8s ease-out infinite;
+}
+
+/*# sourceMappingURL=styles.css.map */

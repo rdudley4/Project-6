@@ -1,0 +1,91 @@
+/* --------------------------
+  Dog Color Fills
+--------------------------- */
+
+// Red
+// ---
+
+#red {
+  .st0 {
+    fill: $coatRed;
+  }
+
+  .st1 {
+    @extend %dogNoseFur;
+  }
+
+  .st2 {
+    @extend %dogEyesNose;
+  }
+
+  .st3 {
+    fill: $eyebrowsRed;
+  }
+}
+
+
+// Fawn
+// ----
+
+#fawn {
+  .st0 {
+    fill: $coatFawn;
+  }
+
+  .st1 {
+    @extend %dogNoseFur;
+  }
+
+  .st2 {
+    @extend %dogEyesNose;
+  }
+
+  .st3 {
+    fill: $eyebrowsFawn;
+  }
+}
+
+
+// Sable
+// -----
+
+#sable {
+  .st0 {
+    fill: $coatSable;
+  }
+
+  .st1 {
+    @extend %dogNoseFur;
+  }
+
+  .st2 {
+    @extend %dogEyesNose;
+  }
+
+  .st3 {
+    fill: $eyebrowsSable;
+  }
+}
+
+
+// Black and Tan
+// -------------
+
+#blacktan {
+  .st0 {
+    fill: $coatBlackTan;
+  }
+
+  .st1 {
+    @extend %dogNoseFur;
+  }
+
+  .st2 {
+    @extend %dogEyesNose;
+  }
+
+  .st3,
+  .st4 {
+    fill: $eyebrowsBlackTan;
+  }
+}

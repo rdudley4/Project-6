@@ -1,0 +1,31 @@
+/* --------------------------
+  Dog Animations
+--------------------------- */
+
+#red,
+#fawn,
+#sable,
+#blacktan {
+  transition: transform .3s ease-out 0s;
+}
+
+
+#red:hover,
+#fawn:hover,
+#sable:hover,
+#blacktan:hover {
+  transform: scale(1.2);
+
+  // Eyebrow Raise
+  // -------------
+  .st3 {
+    animation: eyebrowRaise .7s ease-out .2s forwards;
+  }
+
+  // Panting Effect
+  // --------------
+
+  .tongue path {
+    animation: pant .8s ease-out infinite;
+  }
+}

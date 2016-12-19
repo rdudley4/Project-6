@@ -1,0 +1,67 @@
+/* --------------------------
+  Logo Animation
+--------------------------- */
+
+// Background
+// ----------
+
+.logoBG {
+  animation: grow .8s ease-out backwards;
+}
+
+// Paw Parts
+// ---------
+
+.paw {
+  &-TopLeft,
+  &-TopMid,
+  &-TopRight {
+    animation: slideDown .8s ease-out 1.5s forwards;
+  }
+
+  &-TopLeft,
+  &-TopRight {
+    transform: translate3d(0, -38px, 0);
+  }
+
+  &-TopMid {
+    transform      : translate3d(0, -32px, 0);
+    animation-delay: 1.6s;
+  }
+
+  &-TopRight {
+    animation-delay: 1.7s;
+  }
+
+  &-Bottom {
+    transform: translate3d(0, 55px, 0);
+    animation: slideUp .8s ease-out 1.5s forwards;
+  }
+}
+
+// Logo Text
+// ---------
+
+.text .st1 {
+  fill-opacity: 0;
+  stroke      : $logoText;
+  stroke-width: .8;
+  animation   : offset 1s linear .8s forwards, fillIt .7s ease-out 1.8s forwards;
+
+  @media #{$brk-mobile} {
+    visibility: hidden;
+  } 
+}
+
+@each $path, $length in $pathList {
+  .text .st1:nth-of-type(#{$path}) {
+    stroke-dasharray : $length;
+    stroke-dashoffset: $length;
+  }
+}
+
+.logo-text {
+  @media #{$brk-tablet} {
+    display: none;
+  }
+}

@@ -1,0 +1,32 @@
+/* --------------------------
+  Navigation Styles
+--------------------------- */
+
+#heart,
+#chat,
+#location {
+  width: 14px;
+  fill : #39add1;
+}
+
+a,
+a path {
+  transition: all .3s ease-out;
+}
+
+a:hover {
+  color           : #fff;
+  background-color: #39add1;
+  padding         : 10px 15px;
+  border-radius   : 5px;
+}
+
+a:hover path {
+  fill: #fff;
+}
+
+#home:hover .st0,
+#visit:hover .st0,
+#contact:hover .st0 {
+  animation: pulse 1s linear 0s infinite;
+}
