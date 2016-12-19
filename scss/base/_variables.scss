@@ -59,4 +59,5 @@ $pathList: (1, 50),
 // ---------------------
 
 $brk-mobile: "(max-width: 420px)";
-$brk-tablet: "(min-width: 420px)"; 
+$brk-tablet: "(min-width: 420px)";
+$brk-ie    : "(-ms-high-contrast: none), (-ms-high-contrast: active)"; 

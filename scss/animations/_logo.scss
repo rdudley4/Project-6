@@ -50,7 +50,11 @@
 
   @media #{$brk-mobile} {
     visibility: hidden;
-  } 
+  }
+
+  @media #{$brk-ie} {
+    fill-opacity: 1;
+  }
 }
 
 @each $path, $length in $pathList {

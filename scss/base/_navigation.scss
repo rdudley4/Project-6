@@ -7,6 +7,10 @@
 #location {
   width: 14px;
   fill : #39add1;
+
+  @media #{$brk-ie} {
+    height: 14px;
+  }
 }
 
 a,
