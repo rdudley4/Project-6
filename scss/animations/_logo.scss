@@ -48,7 +48,7 @@
   stroke-width: .8;
   animation   : offset 1s linear .8s forwards, fillIt .7s ease-out 1.8s forwards;
 
-  @media #{$brk-mobile} {
+  @media #{$brk-sm} {
     visibility: hidden;
   }
 
@@ -65,7 +65,7 @@
 }
 
 .logo-text {
-  @media #{$brk-tablet} {
+  @media #{$brk-md} {
     display: none;
   }
 }

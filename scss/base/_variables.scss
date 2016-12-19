@@ -58,6 +58,7 @@ $pathList: (1, 50),
 // Media Query Variables
 // ---------------------
 
-$brk-mobile: "(max-width: 420px)";
-$brk-tablet: "(min-width: 420px)";
+$brk-sm: "(max-width: 420px)";
+$brk-md: "(min-width: 420px)";
+$brk-lg: "(min-width: 960px)";
 $brk-ie    : "(-ms-high-contrast: none), (-ms-high-contrast: active)"; 
