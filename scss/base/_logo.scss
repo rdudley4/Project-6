@@ -1,0 +1,37 @@
+/* --------------------------
+  Logo Styles
+--------------------------- */
+
+#logo {
+  max-width: 140px;
+}
+
+// Logo Text (Non SVG)
+// ---------------------
+
+.logo-text {
+  padding         : 15px 20px;
+  margin-top      : 10px;
+  margin-bottom   : 2.5rem;  
+  border          : 3px solid $manhattan;
+  border-radius   : 5px;
+  color           : $muddyWaters;
+
+  @media #{$brk-md} {
+    display: none;
+  }
+}
+
+
+// Logo Text (SVG)
+// ---------------
+
+.text .st1 {
+  @media #{$brk-sm} {
+    visibility: hidden;
+  }
+
+  @media #{$brk-ie} {
+    fill-opacity: 1;
+  }
+}

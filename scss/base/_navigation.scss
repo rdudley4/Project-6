@@ -2,6 +2,37 @@
   Navigation Styles
 --------------------------- */
 
+nav {
+  padding-bottom: 50px;
+  text-align    : left;
+
+  ul {
+    display        : flex;
+    justify-content: space-around;
+    padding-left   : 0;
+
+    @media #{$brk-lg} {
+      justify-content: flex-start;
+    }
+  }
+
+  li {
+    display: inline-block;
+
+    @media #{$brk-lg} {
+      margin : 0 12.5px;
+
+      &:first-of-type {
+        margin-left: 40px;
+      }
+    } 
+  }
+
+  @media #{$brk-sm} {
+    padding-bottom: 10px;
+  }
+}
+
 #heart,
 #chat,
 #location {

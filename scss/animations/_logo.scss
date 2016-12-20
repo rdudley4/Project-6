@@ -37,6 +37,22 @@
     transform: translate3d(0, 55px, 0);
     animation: slideUp .8s ease-out 1.5s forwards;
   }
+
+  @media #{$brk-sm} {
+    &-TopLeft,
+    &-Bottom {
+      animation-delay: .8s;
+    }
+
+    &-TopMid {
+      animation-delay: .9s;
+    }
+
+    &-TopRight {
+      animation-delay: 1s;
+    }
+
+  }
 }
 
 // Logo Text
@@ -47,25 +63,11 @@
   stroke      : $logoText;
   stroke-width: .8;
   animation   : offset 1s linear .8s forwards, fillIt .7s ease-out 1.8s forwards;
-
-  @media #{$brk-sm} {
-    visibility: hidden;
-  }
-
-  @media #{$brk-ie} {
-    fill-opacity: 1;
-  }
 }
 
 @each $path, $length in $pathList {
   .text .st1:nth-of-type(#{$path}) {
     stroke-dasharray : $length;
     stroke-dashoffset: $length;
-  }
-}
-
-.logo-text {
-  @media #{$brk-md} {
-    display: none;
   }
 }

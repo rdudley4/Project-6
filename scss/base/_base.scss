@@ -52,33 +52,6 @@ header {
   h1 {
     line-height: 1em;
   }
-
-  nav {
-    padding-bottom: 50px;
-    text-align    : left;
-
-    ul {
-      display        : flex;
-      justify-content: space-around;
-      padding-left   : 0;
-
-      @media #{$brk-lg} {
-        justify-content: flex-start;
-      }
-    }
-
-    li {
-      display: inline-block;
-
-      @media #{$brk-lg} {
-        margin : 0 12.5px;
-
-        &:first-of-type {
-          margin-left: 40px;
-        }
-      } 
-    }
-  }
 }
 
    
@@ -119,10 +92,6 @@ footer {
   margin-top    : 100px;
   padding-bottom: 30px;
   color         : #ba8058;
-}
-
-#logo {
-  max-width: 140px;
 }
 
 svg * {
