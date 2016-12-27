@@ -30,8 +30,4 @@
   @media #{$brk-sm} {
     visibility: hidden;
   }
-
-  @media #{$brk-ie} {
-    fill-opacity: 1;
-  }
 }

@@ -1,0 +1,9 @@
+/* --------------------------
+  Mixins
+--------------------------- */
+
+@mixin microsoftEdge($selector) {
+  _:-ms-lang(x), _:-webkit-full-screen, #{$selector} { 
+    @content; 
+  }
+}

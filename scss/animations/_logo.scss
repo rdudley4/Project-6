@@ -63,6 +63,15 @@
   stroke      : $logoText;
   stroke-width: .8;
   animation   : offset 1s linear .8s forwards, fillIt .7s ease-out 1.8s forwards;
+
+  @media #{$brk-ie} {
+    fill-opacity: 1;
+  }
+}
+
+@include microsoftEdge('.text .st1') {
+  fill-opacity: 1;
+  animation   : none;
 }
 
 @each $path, $length in $pathList {
